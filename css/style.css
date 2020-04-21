@@ -1,0 +1,3341 @@
+/* ============general============== */
+html,
+body {
+    overflow-x: hidden;
+    font-family: 'Helvetica';
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Bebas Neue;
+    src: url('../fonts/BebasNeue-Regular.otf');
+}
+
+@font-face {
+    font-family: Helvetica Neue;
+    src: url('../fonts/HelveticaNeueLight.ttf');
+}
+
+.rowofslogan {
+    text-align: center;
+}
+/* ============end of general============== */
+/*=========================== overriding the default browser selection with our color palette=========== */
+::selection {
+    color: #222222;
+    background: #F7EF00;
+}
+
+::-moz-selection {
+    color: #222222;
+    background: #F7EF00;
+}
+
+/*=========================== end of overriding the default browser selection with our color palette=========== */
+/* ============video popup============== */
+#headerPopup {
+    width: 75%;
+    margin: 0 auto;
+}
+
+#headerPopup iframe {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* making full video on mobile screen */
+/* end of making full video on mobile screen */
+/* ============end of video popup============== */
+/* ============navigation bar============== */
+.nav-menu {
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    padding: 22px;
+    transition: all .7s;
+}
+
+.navbar-nav {
+    margin-right: 10rem;
+}
+
+.menu-item {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #666666;
+    transition: color .2s;
+}
+
+.menu-item:hover {
+    color: #A3BB39;
+    transform: scale(1.05);
+}
+
+.line1,
+.line2,
+.line3 {
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+    transition: all .4s;
+}
+
+.change .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+    opacity: 0;
+}
+
+.change .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.custom-navbar {
+    padding: 5px 30px;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
+}
+
+/* ============end of navigation bar============== */
+/* ============footer ============== */
+footer {
+    background: #222222;
+}
+
+ul {
+    list-style: none;
+}
+
+.second-ul li::before {
+    content: "\2022";
+    color: #A3BB39;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.first-ul li::before {
+    content: "\2022";
+    color: #F7EF00;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* ============end of footer ============== */
+/* ============header ============== */
+.banner-heading {
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    color: #A3BB39;
+    letter-spacing: 3px;
+    font-size: 4.3rem;
+}
+
+/* ============end of header ============== */
+/* ============contacts ============== */
+.main-contact-text {
+    color: #222222;
+}
+
+.submitButton {
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+}
+
+.submitButton:hover {
+    background-color: #A3BB39;
+    color: white;
+}
+
+.contact-description {
+    color: #222222;
+}
+
+.storiesFont {
+    font-weight: bold;
+    color: #666666;
+}
+
+.contacts {
+    background-color: #f1f1f1;
+}
+
+/* ============end of contacts ============== */
+/* ============story ============== */
+.story {
+    background-color: #A3BB39;
+}
+
+.storyRow {
+    margin-right: 5%;
+    margin-left: 2%;
+}
+
+/* ============end of story ============== */
+/* ============video ============== */
+.bg-video {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.bg-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.bg-video .container {
+    position: relative;
+    z-index: 2;
+}
+
+.bg-video .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+/* ============end of video ============== */
+/* =========================common button  , texts , and bullent points========================= */
+.section-text {
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 3rem;
+    margin-right: 20px;
+    color: #A3BB39
+}
+
+.commonButton {
+    color: #F7EF00 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 25px;
+    border: 4px solid #F7EF00 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+}
+
+.commonButton:hover {
+    color: #000000 !important;
+    background: #F7EF00;
+    border-color: #F7EF00 !important;
+    transition: all 0.4s ease 0s;
+}
+
+.commonButton2 {
+    color: #A3BB39 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 25px;
+    border: 4px solid #A3BB39 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+}
+
+.commonButton2:hover {
+    color: #ffffff !important;
+    background: #A3BB39;
+    border-color: #A3BB39 !important;
+    transition: all 0.4s ease 0s;
+}
+
+.commonButton3 {
+    color: #A3BB39 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 7px 20px 7px 20px;
+    border: 3px solid #A3BB39 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+}
+
+.commonButton3:hover {
+    color: #ffffff !important;
+    background: #A3BB39;
+    border-color: #A3BB39 !important;
+    transition: all 0.4s ease 0s;
+}
+
+.commonButton4 {
+    color: #A3BB39 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 7px 20px 7px 20px;
+    border: 3px solid #A3BB39 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+}
+
+.commonButton4:hover {
+    color: #ffffff !important;
+    background: #A3BB39;
+    border-color: #A3BB39 !important;
+    transition: all 0.4s ease 0s;
+}
+
+.common-square {
+    color: #A3BB39;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.common-square2 {
+    color: #A3BB39;
+    font-weight: bolder;
+    font-size: 3.8rem;
+}
+
+.points-slogan {
+    color: #F7EF00;
+}
+
+/* =========================end of common button  , texts , and bullent points========================= */
+/*=================== slide show=================== */
+* {
+    box-sizing: border-box;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #A4B131;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+/*=================== end of slide show=================== */
+/*===================portfolio=================== */
+.portfolio{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/portfolio.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*===================end of portfolio=================== */
+/*===================card=================== */
+.text-black {
+    color: #222222;
+}
+
+.typeText {
+    color: #A3BB39;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.font-weight-normal {
+    font-weight: normal;
+}
+
+.font-weight-medium {
+    font-weight: 500;
+}
+
+.lts-1px {
+    letter-spacing: 1px;
+}
+
+.lts-2px {
+    letter-spacing: 2px;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.small {
+    font-size: 0.75rem;
+}
+
+.card-heading {
+    font-size: 2.25rem;
+}
+
+.styled-link {
+    text-decoration: none;
+    outline: none;
+    color: #A3BB39;
+    transition: all 0.25s ease-in;
+}
+
+.styled-link:hover,
+.styled-link:focus,
+.styled-link:active {
+    color: #A3BB39;
+}
+
+.shadow-1 {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+}
+
+.blue-hover {
+    transition: all 0.25s ease-in;
+    border-bottom: 5px solid transparent;
+}
+
+.blue-hover:hover {
+    transform: translateY(-5px);
+    border: none;
+    border-bottom: 5px solid #A3BB39;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+/**Margin and padding utilities*/
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.mr-auto {
+    margin-right: auto;
+}
+
+.mx-0 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.mx-1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.mx-2 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.mx-3 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.my-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.my-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.my-2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.my-3 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+.ml-0 {
+    margin-left: 0;
+}
+
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.ml-2 {
+    margin-left: 2rem;
+}
+
+.ml-3 {
+    margin-left: 3rem;
+}
+
+.px-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.px-1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.px-2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.px-3 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.py-0 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.py-1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.py-2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.py-3 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.pt-0 {
+    padding-top: 0;
+}
+
+.pt-1 {
+    padding-top: 1rem;
+}
+
+.pt-2 {
+    padding-top: 2rem;
+}
+
+.pt-3 {
+    padding-top: 3rem;
+}
+
+.pb-0 {
+    padding-bottom: 0;
+}
+
+.pb-1 {
+    padding-bottom: 1rem;
+}
+
+.pb-2 {
+    padding-bottom: 2rem;
+}
+
+.pb-3 {
+    padding-bottom: 3rem;
+}
+
+.bgCard {
+    background-color: #222222;
+    transform: scale(0.95);
+}
+
+.mainText {
+    color: #f1f1f1;
+}
+
+.desText {
+    color: #bbb;
+    font-weight: lighter;
+}
+
+/*===================end of card=================== */
+/* =======================hover over program section================================== */
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: #A3BB39;
+}
+
+.hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    padding: 50px 20px;
+}
+
+.hovereffect img {
+    display: block;
+    position: relative;
+    max-width: none;
+    width: calc(100% + 20px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.hovereffect:hover img {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.hovereffect h2 {
+    text-transform: uppercase;
+    color: #FFF;
+    text-align: center;
+    position: relative;
+    font-size: 4rem;
+    overflow: hidden;
+    /* padding: 0.5em 0; */
+    background-color: transparent;
+}
+
+.hovereffect h2:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #F7EF00;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+
+.hovereffect:hover h2:after {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.hovereffect ul,
+.hovereffect p {
+    color: #FFF;
+    text-align: left;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+
+.hovereffect:hover ul,
+.hovereffect:hover p {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.columnhover {
+    padding: 5%;
+}
+
+.mainhovertext {
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.first-ul {
+    font-size: 1.2rem;
+}
+
+/* =======================end of hover over program section================================== */
+/* ==================header image for products of portfolio styling===================== */
+.portfolio-header1 {
+    height: 110vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/products/product1assets/header-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.portfolio-header2 {
+    height: 110vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/products/product2assets/elephant.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.portfolio-header3 {
+    height: 110vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/products/product3assets/product3mainphoto.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.portfolio-header4 {
+    height: 110vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/products/product4assets/product4MainBG.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.portfolio-header5 {
+    height: 110vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/products/prodcut5assets/Ridonmainbg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.portfolio-header6 {
+    height: 110vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/products/product6assets/Valesmainbg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.portfolio-header7 {
+    height: 110vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/products/product7assets/product2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+}
+
+.slogan-primary--main {
+    display: block;
+    font-weight: 900;
+    font-weight: lighter;
+    font-size: 1.1rem;
+    margin-right: 50px;
+    letter-spacing: 0.3rem;
+    color: #a0b939;
+    text-transform: uppercase;
+    line-height: 2;
+    animation-name: MoveToLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+.heading-primary--main {
+    display: block;
+    font-size: 4.6rem;
+    font-weight: 900;
+    margin-top: -3rem;
+    animation-name: MoveToLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+
+
+/* ==================end of header image for products of portfolio styling===================== */
+/*==================deatils about the products pages==================== */
+.project__heading {
+    display: inline-block;
+    color: #904894;
+    padding: 0 .7rem;
+    border: 4px solid #904894;
+    font-weight: 300;
+    font-size: 4rem;
+}
+
+.project__heading span {
+    font-weight: 700;
+}
+
+.project-image {
+    text-align: left;
+    padding-left: 40%;
+    float: right;
+}
+
+.product2-image {
+    text-align: left;
+    margin-left: 3%;
+    float: left;
+}
+
+.product4-image {
+    text-align: left;
+}
+
+.product5-image {
+    text-align: right;
+    margin-right: 30px;
+    float: right;
+}
+
+.product6-image {
+    text-align: right;
+    margin-right: 30px;
+    float: right;
+}
+
+.project__description5 {
+    color: #707070;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    margin-top: 1rem;
+}
+
+.project__description6 {
+    color: #707070;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    margin-top: 1rem;
+}
+
+.project__description {
+    color: #707070;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin-top: 1rem;
+}
+
+.project__description2 {
+    color: #707070;
+    font-size: 1.6rem;
+    font-weight: lighter;
+}
+
+.project__description3 {
+    color: #707070;
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+
+.prodcut3LogoImage {
+    margin-bottom: 6%;
+}
+
+/*==================end of deatils about the project==================== */
+/* =============navigation between projects=====================    */
+.footer__nav {
+    width: 100%;
+}
+
+.footer__nav-prev,
+.footer__nav-next {
+    display: inline;
+    text-align: center;
+    padding: 2rem;
+    width: 50%;
+    float: left;
+}
+
+.footer__nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.footer__nav-prev {
+    background-color: #a0b939;
+    transition: all .2s;
+}
+
+.footer__nav-next {
+    background-color: #bbc836;
+    transition: all .2s;
+}
+
+.footer__nav a:hover .footer__nav-prev {
+    background-color: #899d37;
+}
+
+.footer__nav a:hover .footer__nav-next {
+    background-color: #A4B131;
+}
+
+@media (max-width:415) {
+    .footer__nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+}
+
+/* =============end of navigation between projects=====================    */
+/* ======================adding animation======================================= */
+/* product name animation */
+.open {
+    width: 473px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: inline-flex;
+    animation-name: open;
+}
+
+@keyframes open {
+    from {
+        width: 0
+    }
+}
+
+/* product slogan animation */
+.slogan-primary--main:hover {
+    animation-name: showBox;
+    color: #F7EF00;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* product desciption animation */
+.project__description {
+    animation-name: showBox;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes showBox {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
+
+/* ===========================adding [slideanim] animation to home index page======================== */
+.slideanim {
+    visibility: hidden;
+    visibility: visible\9;
+    /*For old IE browsers IE6-8 */
+}
+
+.slideanim.slide {
+    visibility: visible;
+    animation: slide 1s;
+}
+
+.slideanim::after {
+    /* useful when its child elements are float:left; */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===========================end of adding [slideanim] animation to home index page======================== */
+
+/* adding responsive to text animation */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+    .typo-animation {
+        font-size: 45px;
+        margin-top: 85px;
+        text-align: center;
+    }
+}
+
+/* adding resposive to nvigation next and pervious projects */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+
+    .footer__nav-prev,
+    .footer__nav-next {
+        font-size: 1.4rem;
+    }
+}
+
+/* ===============================iPads (portrait) ========================================= */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 1) {
+
+    /* Styles */
+    /* program section */
+    .hovereffect h2,
+    .common-square2 {
+        font-size: 5rem;
+    }
+
+    .first-ul {
+        font-size: 1.9rem;
+    }
+
+    .address {
+        font-size: .68rem;
+    }
+
+    .restofaddress {
+        transform: translateY(-30px);
+        padding-left: 73px;
+    }
+
+    .vid2 {
+        margin-top: 50px;
+
+    }
+
+    /* product1 */
+    .project-image {
+        padding-left: 600px;
+    }
+
+    .actermaText {
+        padding-left: 65px;
+    }
+
+    .actermaSlogan {
+        font-size: 1rem;
+        padding-left: 93px;
+
+    }
+
+    .actermaPic {
+        width: 220%;
+        padding-left: 56rem;
+    }
+
+    /* prodcut2 */
+    .elephentLogoImage {
+        width: 50%;
+    }
+
+    .deprexText {
+        padding-left: 35px;
+    }
+
+    .deprexSlogan {
+        padding-left: 62px;
+    }
+
+    /* prodcut3 */
+    .herSlogan {
+        text-align: center;
+        padding-left: 70px;
+    }
+
+    .prodcut3LogoImage {
+        width: 70%;
+    }
+
+    .herImage {
+        width: 40%;
+        ;
+    }
+
+    .project__description3 {
+        margin-top: 250px;
+    }
+
+    /* prodcut4 */
+    .mobicText {
+        padding-left: 80px;
+    }
+
+    .mobicSlogan {
+        padding-left: 60px;
+    }
+
+    .mobicPargraph {
+        margin-top: 0;
+    }
+
+    .product4-image {
+        width: 100%;
+    }
+
+    /* prodcut5 */
+    .ridonText {
+        padding-left: 80px;
+    }
+
+    .ridonSlogan {
+        padding-left: 20px;
+    }
+
+    /* prodcut6 */
+    .valesText {
+        padding-left: 80px;
+    }
+
+    .valesSlogan {
+        padding-left: 40px;
+
+    }
+
+    .product6-image {
+        padding-left: 65px;
+    }
+
+    /* prodcut7 */
+    .avastinText {
+        padding-left: 80px;
+    }
+
+    .avastinSlogan {
+        padding-left: 105px;
+
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 1) {
+
+    /* Styles */
+    /* program section */
+    .hovereffect h2,
+    .common-square2 {
+        font-size: 2.5rem;
+    }
+
+    .first-ul {
+        font-size: .55rem;
+    }
+
+    .restofaddress {
+        transform: translateY(-45px);
+        padding-left: 73px;
+    }
+
+}
+
+/* ===============================end of iPads (portrait) ========================================= */
+
+/* =============================Desktops and laptops [1440]================================================================*/
+@media only screen and (min-width : 1440px) {
+
+    /* Styles */
+    /* program section */
+    .hovereffect h2,
+    .common-square2 {
+        font-size: 2.7rem;
+    }
+
+    .first-ul {
+        font-size: 1.9rem;
+    }
+
+    .address {
+        font-size: .9rem;
+    }
+
+    .restofaddress {
+        transform: translateY(-40px);
+        padding-left: 73px;
+    }
+
+    /* product1 */
+    .project-image {
+        width: 130%;
+    }
+
+    /* product2 */
+    .deprexSlogan {
+        padding-left: 20px;
+    }
+
+    /* prodcut3 */
+    .herSlogan {
+        text-align: center;
+        padding-left: 70px;
+    }
+
+    /* prodcut4 */
+    .mobicText {
+        padding-left: 80px;
+    }
+
+    .mobicSlogan {
+        padding-left: 80px;
+    }
+
+    /* prodcut5 */
+    .ridonText {
+        padding-left: 80px;
+    }
+
+    .ridonSlogan {
+        padding-left: 20px;
+    }
+
+    /* prodcut6 */
+    .valesText {
+        padding-left: 80px;
+    }
+
+    /* prodcut7 */
+    .avastinText {
+        padding-left: 70px;
+    }
+
+    .avastinSlogan {
+        padding-left: 90px;
+
+    }
+}
+
+/* =============================end of Desktops and laptops================================================================*/
+/* =============================Desktops and laptops [1280]================================================================*/
+@media only screen and (min-width : 1280px) {
+
+    /* Styles */
+    /* program section */
+    .hovereffect h2,
+    .common-square2 {
+        font-size: 2.7rem;
+    }
+
+    .first-ul {
+        font-size: 0.85rem;
+    }
+
+    .address {
+        font-size: .9rem;
+    }
+
+    .restofaddress {
+        transform: translateY(-40px);
+        padding-left: 73px;
+    }
+
+    /* product1 */
+    .project-image {
+        width: 130%;
+    }
+
+    /* product2 */
+    .deprexSlogan {
+        padding-left: 20px;
+    }
+
+
+    /* prodcut3 */
+    .herSlogan {
+        text-align: center;
+        padding-left: 70px;
+    }
+
+    /* prodcut4 */
+    .mobicText {
+        padding-left: 80px;
+    }
+
+    .mobicSlogan {
+        padding-left: 100px;
+    }
+
+    /* prodcut5 */
+    .ridonText {
+        padding-left: 80px;
+    }
+
+
+    /* prodcut6 */
+    .valesText {
+        padding-left: 80px;
+    }
+
+    .valesSlogan {
+        padding-left: 32px;
+    }
+
+    /* prodcut7 */
+    .avastinText {
+        padding-left: 70px;
+    }
+
+    .avastinSlogan {
+        padding-left: 90px;
+
+    }
+}
+
+/* =============================end of Desktops and laptops================================================================*/
+/* ===============================Large screens=============================================================================*/
+@media only screen and (min-width : 1824px) {
+
+    /* Styles */
+    /* program section */
+    .hovereffect h2,
+    .common-square2 {
+        font-size: 4rem;
+    }
+
+    .first-ul {
+        font-size: 1.3rem;
+    }
+
+    .restofaddress {
+        transform: translateY(-30px);
+        padding-left: 73px;
+    }
+}
+
+/* ===============================end of Large screens=============================================================================*/
+/* ==========================================iPhone 6, 7, 8========================================================================== */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+    
+    /* Styles */
+    /* program section */
+    .hovereffect h2,
+    .common-square2 {
+        font-size: 2.5rem;
+    }
+
+    .first-ul {
+        font-size: 0.74rem;
+    }
+
+    /*contacts icons*/
+    .contact-description {
+        font-size: .9rem;
+    }
+
+    .restofaddress {
+        font-size: .9rem;
+        padding-left: 80px;
+        margin-top: 0;
+        transform: translateY(-50px);
+
+    }
+
+    .phoneNumber {
+        font-size: .9rem;
+
+    }
+
+    .rowContact2 {
+        transform: translateY(-65px);
+
+    }
+
+    /* story */
+    .vid2 {
+        margin-top: 20px;
+    }
+
+    /* product1 */
+    .actermaText {
+        font-size: 2.5rem;
+        padding-left: 65px;
+    }
+
+    .project__heading {
+        font-size: 1.3rem;
+    }
+
+
+    .actermaSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+
+    }
+
+    .project-image {
+        width: 300%;
+        padding-left: 500px;
+    }
+
+    /* product2 */
+    .deprexText {
+        font-size: 2.5rem;
+        padding-left: 60px;
+    }
+
+    .deprexSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    .elephentLogoImage,
+    .elephentTextImage,
+    .product2-image {
+        width: 100%;
+    }
+
+
+    /* prodcut3 */
+    .herText {
+        font-size: 2.5rem;
+        padding-left: 50px;
+    }
+
+    .herSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    /* prodcut4 */
+    .mobicText {
+        font-size: 2.5rem;
+        padding-left: 105px;
+    }
+
+    .mobicSlogan {
+        font-size: .8rem;
+        padding-left: 75px;
+    }
+
+    .product4-image {
+        width: 120%;
+    }
+
+    /* prodcut5 */
+    .ridonText {
+        font-size: 2.5rem;
+        padding-left: 105px;
+    }
+
+    .ridonSlogan {
+        font-size: .8rem;
+        padding-left: 75px;
+    }
+
+    .product5-image {
+        width: 100%;
+    }
+
+    /* prodcut6 */
+    .valesText {
+        font-size: 2.5rem;
+        padding-left: 105px;
+    }
+
+    .valesSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    .product6-image {
+        width: 100%;
+    }
+
+    /* prodcut7 */
+    .avastinText {
+        font-size: 2.5rem;
+        padding-left: 86px;
+    }
+
+    .avastinSlogan {
+        font-size: .8rem;
+        padding-left: 80px;
+
+    }
+
+
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+
+    /* Styles */
+    /* program section */
+    .hovereffect h2,
+    .common-square2 {
+        font-size: 2.5rem;
+    }
+
+    .first-ul {
+        font-size: 0.74rem;
+    }
+
+    /*contacts icons*/
+    .contact-description {
+        font-size: .9rem;
+    }
+
+    .restofaddress {
+        font-size: .9rem;
+        padding-left: 80px;
+        margin-top: 0;
+        transform: translateY(-50px);
+
+    }
+
+    .phoneNumber {
+        font-size: .9rem;
+
+    }
+
+    .rowContact2 {
+        transform: translateY(-65px);
+
+    }
+
+    /* story */
+    .vid2 {
+        margin-top: 20px;
+    
+    }
+
+
+    /* product1 */
+    .actermaText {
+        font-size: 2.5rem;
+        padding-left: 65px;
+    }
+
+    .project__heading {
+        font-size: 1.3rem;
+    }
+
+
+    .actermaSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+
+    }
+
+    .project-image {
+        width: 300%;
+        padding-left: 500px;
+    }
+
+    /* product2 */
+    .deprexText {
+        font-size: 2.5rem;
+        padding-left: 60px;
+    }
+
+    .deprexSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    .elephentLogoImage,
+    .elephentTextImage,
+    .product2-image {
+        width: 100%;
+    }
+
+
+    /* prodcut3 */
+    .herText {
+        font-size: 2.5rem;
+        padding-left: 50px;
+    }
+
+    .herSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    /* prodcut4 */
+    .mobicText {
+        font-size: 2.5rem;
+        padding-left: 105px;
+    }
+
+    .mobicSlogan {
+        font-size: .8rem;
+        padding-left: 75px;
+    }
+
+    .product4-image {
+        width: 120%;
+    }
+
+    /* prodcut5 */
+    .ridonText {
+        font-size: 2.5rem;
+        padding-left: 105px;
+    }
+
+    .ridonSlogan {
+        font-size: .8rem;
+        padding-left: 75px;
+    }
+
+    .product5-image {
+        width: 100%;
+    }
+
+    /* prodcut6 */
+    .valesText {
+        font-size: 2.5rem;
+        padding-left: 105px;
+    }
+
+    .valesSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    .product6-image {
+        width: 100%;
+    }
+
+    /* prodcut7 */
+    .avastinText {
+        font-size: 2.5rem;
+        padding-left: 86px;
+    }
+
+    .avastinSlogan {
+        font-size: .8rem;
+        padding-left: 80px;
+
+    }
+}
+
+/* ==========================================end of iPhone 6, 7, 8========================================================================== */
+/* ==========================================iPhone 6+, 7+, 8+================================================================================*/
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
+
+    /* Styles */
+    /* program section */
+    .hovereffect h2,
+    .common-square2 {
+        font-size: 2.7rem;
+    }
+
+    .first-ul {
+        font-size: .79rem;
+    }
+
+    /*contacts icons*/
+    .contact-description {
+        font-size: .9rem;
+    }
+
+    .restofaddress {
+        font-size: .9rem;
+        padding-left: 80px;
+        margin-top: 0;
+        transform: translateY(-50px);
+
+    }
+
+    .phoneNumber {
+        font-size: .9rem;
+
+    }
+
+    .rowContact2 {
+        transform: translateY(-65px);
+
+    }
+
+    /* story */
+    .vid2 {
+        margin-top: 20px;
+    }
+
+    /* product1 */
+    .actermaText {
+        font-size: 2.5rem;
+        padding-left: 75px;
+    }
+
+    .project__heading {
+        font-size: 1.3rem;
+    }
+
+
+    .actermaSlogan {
+        font-size: .8rem;
+        padding-left: 50px;
+
+    }
+
+    .project-image {
+        width: 200%;
+        padding-left: 320px;
+    }
+
+    /* product2 */
+    .deprexText {
+        font-size: 2.3rem;
+        padding-left: 83px;
+    }
+
+    .deprexSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    .elephentLogoImage,
+    .elephentTextImage,
+    .product2-image {
+        width: 100%;
+    }
+
+
+    /* prodcut3 */
+    .herText {
+        font-size: 2.3rem;
+        padding-left: 70px;
+    }
+
+    .herSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    /* prodcut4 */
+    .mobicText {
+        font-size: 2.3rem;
+        padding-left: 115px;
+    }
+
+    .mobicSlogan {
+        font-size: .8rem;
+        padding-left: 55px;
+    }
+
+    .product4-image {
+        width: 120%;
+    }
+
+    /* prodcut5 */
+    .ridonText {
+        font-size: 2.3rem;
+        padding-left: 115px;
+    }
+
+    .ridonSlogan {
+        font-size: .8rem;
+        padding-left: 60px;
+    }
+
+    .product5-image {
+        width: 100%;
+    }
+
+    /* prodcut6 */
+    .valesText {
+        font-size: 2.3rem;
+        padding-left: 115px;
+    }
+
+    .valesSlogan {
+        font-size: .8rem;
+        padding-left: 55px;
+    }
+
+    .product6-image {
+        width: 100%;
+    }
+
+    /* prodcut7 */
+    .avastinText {
+        font-size: 2.3rem;
+        padding-left: 105px;
+    }
+
+    .avastinSlogan {
+        font-size: .8rem;
+        padding-left: 70px;
+
+    }
+
+}
+
+@media only screen and (width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
+
+    /* Styles */
+    /* program section */
+    .hovereffect h2,
+    .common-square2 {
+        font-size: 2.7rem;
+    }
+
+    .first-ul {
+        font-size: .79rem;
+    }
+
+    /*contacts icons*/
+    .contact-description {
+        font-size: .9rem;
+    }
+
+    .restofaddress {
+        font-size: .9rem;
+        padding-left: 80px;
+        margin-top: 0;
+        transform: translateY(-50px);
+
+    }
+
+    .phoneNumber {
+        font-size: .9rem;
+
+    }
+
+    .rowContact2 {
+        transform: translateY(-65px);
+
+    }
+
+    /* story */
+    .vid2 {
+        margin-top: 20px;
+    }
+
+    /* product1 */
+    .actermaText {
+        font-size: 2.5rem;
+        padding-left: 75px;
+    }
+
+    .project__heading {
+        font-size: 1.3rem;
+    }
+
+
+    .actermaSlogan {
+        font-size: .8rem;
+        padding-left: 50px;
+
+    }
+
+    .project-image {
+        width: 200%;
+        padding-left: 320px;
+    }
+
+    /* product2 */
+    .deprexText {
+        font-size: 2.3rem;
+        padding-left: 83px;
+    }
+
+    .deprexSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    .elephentLogoImage,
+    .elephentTextImage,
+    .product2-image {
+        width: 100%;
+    }
+
+
+    /* prodcut3 */
+    .herText {
+        font-size: 2.3rem;
+        padding-left: 70px;
+    }
+
+    .herSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    /* prodcut4 */
+    .mobicText {
+        font-size: 2.3rem;
+        padding-left: 115px;
+    }
+
+    .mobicSlogan {
+        font-size: .8rem;
+        padding-left: 55px;
+    }
+
+    .product4-image {
+        width: 120%;
+    }
+
+    /* prodcut5 */
+    .ridonText {
+        font-size: 2.3rem;
+        padding-left: 115px;
+    }
+
+    .ridonSlogan {
+        font-size: .8rem;
+        padding-left: 60px;
+    }
+
+    .product5-image {
+        width: 100%;
+    }
+
+    /* prodcut6 */
+    .valesText {
+        font-size: 2.3rem;
+        padding-left: 115px;
+    }
+
+    .valesSlogan {
+        font-size: .8rem;
+        padding-left: 55px;
+    }
+
+    .product6-image {
+        width: 100%;
+    }
+
+    /* prodcut7 */
+    .avastinText {
+        font-size: 2.3rem;
+        padding-left: 105px;
+    }
+
+    .avastinSlogan {
+        font-size: .8rem;
+        padding-left: 70px;
+
+    }
+}
+
+/* ==========================================iPhone 6+, 7+, 8+================================================================================*/
+/* =========================================iPhone 4 and 4S=================================================================================== */
+@media only screen and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 1) {
+
+    /* program section */
+    .hovereffect h2,
+    .common-square2 {
+        font-size: 2.3rem;
+    }
+
+    .first-ul {
+        font-size: .49rem;
+    }
+
+    .typo-animation {
+        font-size: 45px;
+        margin-top: 85px;
+        text-align: center;
+    }
+
+    .programText,
+    .storyText,
+    .portfolioText,
+    .clientText,
+    .connectText {
+        font-size: 2.5rem;
+    }
+
+
+    /*contacts icons*/
+    .contact-description {
+        font-size: .67rem;
+    }
+
+    .restofaddress {
+        font-size: .67rem;
+        padding-left: 80px;
+        margin-top: 0;
+        transform: translateY(-50px);
+
+    }
+
+    .phoneNumber {
+        font-size: .9rem;
+
+    }
+
+    .rowContact2 {
+        transform: translateY(-65px);
+
+    }
+
+    /* story */
+    .vid2 {
+        margin-top: 20px;
+    }
+
+    /* product1 */
+    .actermaText {
+        font-size: 2.5rem;
+        padding-left: 40px;
+    }
+
+    .project__heading {
+        font-size: 1.3rem;
+    }
+
+    .actermaSlogan {
+        font-size: .65rem;
+        padding-left: 50px;
+
+    }
+
+    .project-image {
+        width: 320%;
+        padding-left: 400px;
+    }
+
+    /* product2 */
+    .deprexText {
+        font-size: 2.5rem;
+        padding-left: 40px;
+    }
+
+    .deprexSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    .elephentLogoImage,
+    .elephentTextImage,
+    .product2-image {
+        width: 100%;
+    }
+
+
+    /* prodcut3 */
+    .herText {
+        font-size: 2.5rem;
+        padding-left: 20px;
+    }
+
+    .herSlogan {
+        font-size: .6rem;
+        padding-left: 65px;
+    }
+
+    .prodcut3LogoImage {
+        width: 130%;
+    }
+
+    /* prodcut4 */
+    .mobicText {
+        font-size: 2.5rem;
+        padding-left: 65px;
+    }
+
+    .mobicSlogan {
+        font-size: .8rem;
+        padding-left: 55px;
+    }
+
+    .product4-image {
+        width: 120%;
+    }
+
+    /* prodcut5 */
+    .ridonText {
+        font-size: 2.3rem;
+        padding-left: 75px;
+    }
+
+    .ridonSlogan {
+        font-size: .8rem;
+        padding-left: 60px;
+    }
+
+    .product5-image {
+        width: 100%;
+    }
+
+    /* prodcut6 */
+    .valesText {
+        font-size: 2.3rem;
+        padding-left: 72px;
+    }
+
+    .valesSlogan {
+        font-size: .8rem;
+        padding-left: 55px;
+    }
+
+    .product6-image {
+        width: 100%;
+    }
+
+    /* prodcut7 */
+    .avastinText {
+        font-size: 2.3rem;
+        padding-left: 65px;
+    }
+
+    .avastinSlogan {
+        font-size: .8rem;
+        padding-left: 70px;
+
+    }
+}
+
+/* =========================================end of iPhone 4 and 4S=================================================================================== */
+/* ===========================================iPhone X============================================================================================*/
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
+
+    /* Styles */
+    /* program section */
+    .hovereffect h2,
+    .common-square2 {
+        font-size: 2.5rem;
+    }
+
+    .first-ul {
+        font-size: 0.74rem;
+    }
+
+    /*contacts icons*/
+    .contact-description {
+        font-size: .9rem;
+    }
+
+    .restofaddress {
+        font-size: .9rem;
+        padding-left: 80px;
+        margin-top: 0;
+        transform: translateY(-50px);
+
+    }
+
+    .phoneNumber {
+        font-size: .9rem;
+
+    }
+
+    .rowContact2 {
+        transform: translateY(-65px);
+
+    }
+
+    /* story */
+    .vid2 {
+        margin-top: 20px;
+    }
+
+    /* product1 */
+    .actermaText {
+        font-size: 2.5rem;
+        padding-left: 65px;
+    }
+
+    .project__heading {
+        font-size: 1.3rem;
+    }
+
+
+    .actermaSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+
+    }
+
+    .project-image {
+        width: 300%;
+        padding-left: 500px;
+    }
+
+    /* product2 */
+    .deprexText {
+        font-size: 2.5rem;
+        padding-left: 60px;
+    }
+
+    .deprexSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    .elephentLogoImage,
+    .elephentTextImage,
+    .product2-image {
+        width: 100%;
+    }
+
+
+    /* prodcut3 */
+    .herText {
+        font-size: 2.5rem;
+        padding-left: 50px;
+    }
+
+    .herSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    /* prodcut4 */
+    .mobicText {
+        font-size: 2.5rem;
+        padding-left: 105px;
+    }
+
+    .mobicSlogan {
+        font-size: .8rem;
+        padding-left: 75px;
+    }
+
+    .product4-image {
+        width: 120%;
+    }
+
+    /* prodcut5 */
+    .ridonText {
+        font-size: 2.5rem;
+        padding-left: 105px;
+    }
+
+    .ridonSlogan {
+        font-size: .8rem;
+        padding-left: 75px;
+    }
+
+    .product5-image {
+        width: 100%;
+    }
+
+    /* prodcut6 */
+    .valesText {
+        font-size: 2.5rem;
+        padding-left: 105px;
+    }
+
+    .valesSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    .product6-image {
+        width: 100%;
+    }
+
+    /* prodcut7 */
+    .avastinText {
+        font-size: 2.5rem;
+        padding-left: 86px;
+    }
+
+    .avastinSlogan {
+        font-size: .8rem;
+        padding-left: 80px;
+
+    }
+
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
+
+    /* Styles */
+    /* program section */
+    .hovereffect h2,
+    .common-square2 {
+        font-size: 2.5rem;
+    }
+
+    .first-ul {
+        font-size: 0.74rem;
+    }
+
+    /*contacts icons*/
+    .contact-description {
+        font-size: .9rem;
+    }
+
+    .restofaddress {
+        font-size: .9rem;
+        padding-left: 80px;
+        margin-top: 0;
+        transform: translateY(-50px);
+
+    }
+
+    .phoneNumber {
+        font-size: .9rem;
+
+    }
+
+    .rowContact2 {
+        transform: translateY(-65px);
+
+    }
+
+    /* story */
+    .vid2 {
+        margin-top: 20px;
+    }
+
+    /* product1 */
+    .actermaText {
+        font-size: 2.5rem;
+        padding-left: 65px;
+    }
+
+    .project__heading {
+        font-size: 1.3rem;
+    }
+
+
+    .actermaSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+
+    }
+
+    .project-image {
+        width: 300%;
+        padding-left: 500px;
+    }
+
+    /* product2 */
+    .deprexText {
+        font-size: 2.5rem;
+        padding-left: 60px;
+    }
+
+    .deprexSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    .elephentLogoImage,
+    .elephentTextImage,
+    .product2-image {
+        width: 100%;
+    }
+
+
+    /* prodcut3 */
+    .herText {
+        font-size: 2.5rem;
+        padding-left: 50px;
+    }
+
+    .herSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    /* prodcut4 */
+    .mobicText {
+        font-size: 2.5rem;
+        padding-left: 105px;
+    }
+
+    .mobicSlogan {
+        font-size: .8rem;
+        padding-left: 75px;
+    }
+
+    .product4-image {
+        width: 120%;
+    }
+
+    /* prodcut5 */
+    .ridonText {
+        font-size: 2.5rem;
+        padding-left: 105px;
+    }
+
+    .ridonSlogan {
+        font-size: .8rem;
+        padding-left: 75px;
+    }
+
+    .product5-image {
+        width: 100%;
+    }
+
+    /* prodcut6 */
+    .valesText {
+        font-size: 2.5rem;
+        padding-left: 105px;
+    }
+
+    .valesSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    .product6-image {
+        width: 100%;
+    }
+
+    /* prodcut7 */
+    .avastinText {
+        font-size: 2.5rem;
+        padding-left: 86px;
+    }
+
+    .avastinSlogan {
+        font-size: .8rem;
+        padding-left: 80px;
+
+    }
+}
+
+/* ===========================================end of iPhone X============================================================================================*/
+/* ==================================iPhone XS Max, XR============================================================================================== */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
+
+    /* Styles */
+    /* program section */
+    .hovereffect h2,
+    .common-square2 {
+        font-size: 2.5rem;
+    }
+
+    .first-ul {
+        font-size: 0.74rem;
+    }
+
+    /*contacts icons*/
+    .contact-description {
+        font-size: .9rem;
+    }
+
+    .restofaddress {
+        font-size: .9rem;
+        padding-left: 80px;
+        margin-top: 0;
+        transform: translateY(-50px);
+
+    }
+
+    .phoneNumber {
+        font-size: .9rem;
+
+    }
+
+    .rowContact2 {
+        transform: translateY(-65px);
+
+    }
+
+    /* story */
+    .vid2 {
+        margin-top: 20px;
+    }
+
+    /* product1 */
+    .actermaText {
+        font-size: 2.5rem;
+        padding-left: 65px;
+    }
+
+    .project__heading {
+        font-size: 1.3rem;
+    }
+
+
+    .actermaSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+
+    }
+
+    .project-image {
+        width: 300%;
+        padding-left: 500px;
+    }
+
+    /* product2 */
+    .deprexText {
+        font-size: 2.5rem;
+        padding-left: 60px;
+    }
+
+    .deprexSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    .elephentLogoImage,
+    .elephentTextImage,
+    .product2-image {
+        width: 100%;
+    }
+
+
+    /* prodcut3 */
+    .herText {
+        font-size: 2.5rem;
+        padding-left: 50px;
+    }
+
+    .herSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    /* prodcut4 */
+    .mobicText {
+        font-size: 2.5rem;
+        padding-left: 105px;
+    }
+
+    .mobicSlogan {
+        font-size: .8rem;
+        padding-left: 75px;
+    }
+
+    .product4-image {
+        width: 120%;
+    }
+
+    /* prodcut5 */
+    .ridonText {
+        font-size: 2.5rem;
+        padding-left: 105px;
+    }
+
+    .ridonSlogan {
+        font-size: .8rem;
+        padding-left: 75px;
+    }
+
+    .product5-image {
+        width: 100%;
+    }
+
+    /* prodcut6 */
+    .valesText {
+        font-size: 2.5rem;
+        padding-left: 105px;
+    }
+
+    .valesSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    .product6-image {
+        width: 100%;
+    }
+
+    /* prodcut7 */
+    .avastinText {
+        font-size: 2.5rem;
+        padding-left: 86px;
+    }
+
+    .avastinSlogan {
+        font-size: .8rem;
+        padding-left: 80px;
+
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
+
+    /* Styles */
+    /* program section */
+    .hovereffect h2,
+    .common-square2 {
+        font-size: 2.5rem;
+    }
+
+    .first-ul {
+        font-size: 0.74rem;
+    }
+
+    /*contacts icons*/
+    .contact-description {
+        font-size: .9rem;
+    }
+
+    .restofaddress {
+        font-size: .9rem;
+        padding-left: 80px;
+        margin-top: 0;
+        transform: translateY(-50px);
+
+    }
+
+    .phoneNumber {
+        font-size: .9rem;
+
+    }
+
+    .rowContact2 {
+        transform: translateY(-65px);
+
+    }
+
+    /* story */
+    .vid2 {
+        margin-top: 20px;
+    }
+
+    /* product1 */
+    .actermaText {
+        font-size: 2.5rem;
+        padding-left: 65px;
+    }
+
+    .project__heading {
+        font-size: 1.3rem;
+    }
+
+
+    .actermaSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+
+    }
+
+    .project-image {
+        width: 300%;
+        padding-left: 500px;
+    }
+
+    /* product2 */
+    .deprexText {
+        font-size: 2.5rem;
+        padding-left: 60px;
+    }
+
+    .deprexSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    .elephentLogoImage,
+    .elephentTextImage,
+    .product2-image {
+        width: 100%;
+    }
+
+
+    /* prodcut3 */
+    .herText {
+        font-size: 2.5rem;
+        padding-left: 50px;
+    }
+
+    .herSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    /* prodcut4 */
+    .mobicText {
+        font-size: 2.5rem;
+        padding-left: 105px;
+    }
+
+    .mobicSlogan {
+        font-size: .8rem;
+        padding-left: 75px;
+    }
+
+    .product4-image {
+        width: 120%;
+    }
+
+    /* prodcut5 */
+    .ridonText {
+        font-size: 2.5rem;
+        padding-left: 105px;
+    }
+
+    .ridonSlogan {
+        font-size: .8rem;
+        padding-left: 75px;
+    }
+
+    .product5-image {
+        width: 100%;
+    }
+
+    /* prodcut6 */
+    .valesText {
+        font-size: 2.5rem;
+        padding-left: 105px;
+    }
+
+    .valesSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    .product6-image {
+        width: 100%;
+    }
+
+    /* prodcut7 */
+    .avastinText {
+        font-size: 2.5rem;
+        padding-left: 86px;
+    }
+
+    .avastinSlogan {
+        font-size: .8rem;
+        padding-left: 80px;
+
+    }
+}
+
+/* ==================================end of iPhone XS Max, XR============================================================================================== */
+/* =======================================Smartphones (portrait and landscape)===================================================================== */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    /* Styles */
+    /* program section */
+    .hovereffect h2,
+    .common-square2 {
+        font-size: 2.5rem;
+    }
+
+    .first-ul {
+        font-size: 0.74rem;
+    }
+
+    /*contacts icons*/
+    .contact-description {
+        font-size: .9rem;
+    }
+
+    .restofaddress {
+        font-size: .9rem;
+        padding-left: 80px;
+        margin-top: 0;
+        transform: translateY(-50px);
+
+    }
+
+    .phoneNumber {
+        font-size: .9rem;
+
+    }
+
+    .rowContact2 {
+        transform: translateY(-65px);
+
+    }
+
+    /* story */
+    .vid2 {
+        margin-top: 20px;
+    }
+
+    /* product1 */
+    .actermaText {
+        font-size: 2.5rem;
+        padding-left: 65px;
+    }
+
+    .project__heading {
+        font-size: 1.3rem;
+    }
+
+
+    .actermaSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+
+    }
+
+    .project-image {
+        width: 300%;
+        padding-left: 500px;
+    }
+
+    /* product2 */
+    .deprexText {
+        font-size: 2.5rem;
+        padding-left: 60px;
+    }
+
+    .deprexSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    .elephentLogoImage,
+    .elephentTextImage,
+    .product2-image {
+        width: 100%;
+    }
+
+
+    /* prodcut3 */
+    .herText {
+        font-size: 2.5rem;
+        padding-left: 50px;
+    }
+
+    .herSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    /* prodcut4 */
+    .mobicText {
+        font-size: 2.5rem;
+        padding-left: 105px;
+    }
+
+    .mobicSlogan {
+        font-size: .8rem;
+        padding-left: 75px;
+    }
+
+    .product4-image {
+        width: 120%;
+    }
+
+    /* prodcut5 */
+    .ridonText {
+        font-size: 2.5rem;
+        padding-left: 105px;
+    }
+
+    .ridonSlogan {
+        font-size: .8rem;
+        padding-left: 75px;
+    }
+
+    .product5-image {
+        width: 100%;
+    }
+
+    /* prodcut6 */
+    .valesText {
+        font-size: 2.5rem;
+        padding-left: 105px;
+    }
+
+    .valesSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    .product6-image {
+        width: 100%;
+    }
+
+    /* prodcut7 */
+    .avastinText {
+        font-size: 2.5rem;
+        padding-left: 86px;
+    }
+
+    .avastinSlogan {
+        font-size: .8rem;
+        padding-left: 80px;
+
+    }
+}
+
+/* =======================================end of Smartphones (portrait and landscape)===================================================================== */
+/* =============================================Portrait and landscape Samsung Galaxy S4 ========================================*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .typo-animation {
+        font-size: 45px;
+        margin-top: 85px;
+        text-align: center;
+    }
+
+    .footer__nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+
+    /* program section */
+    .hovereffect h2,
+    .common-square2 {
+        font-size: 2.5rem;
+    }
+
+    .first-ul {
+        font-size: 0.69rem;
+    }
+
+    /*contacts icons*/
+    .contact-description {
+        font-size: .9rem;
+    }
+
+    .restofaddress {
+        font-size: .9rem;
+        padding-left: 80px;
+        margin-top: 0;
+        transform: translateY(-50px);
+
+    }
+
+    .phoneNumber {
+        font-size: .9rem;
+
+    }
+
+    .rowContact2 {
+        transform: translateY(-65px);
+
+    }
+
+    /* story */
+    .vid2 {
+        margin-top: 20px;
+    }
+
+    /* product1 */
+    .actermaText {
+        font-size: 2.5rem;
+        padding-left: 65px;
+    }
+
+    .project__heading {
+        font-size: 1.3rem;
+    }
+
+
+    .actermaSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+
+    }
+
+    .project-image {
+        width: 300%;
+        padding-left: 500px;
+    }
+
+    /* product2 */
+    .deprexText {
+        font-size: 2.5rem;
+        padding-left: 60px;
+    }
+
+    .deprexSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    .elephentLogoImage,
+    .elephentTextImage,
+    .product2-image {
+        width: 100%;
+    }
+
+
+    /* prodcut3 */
+    .herText {
+        font-size: 2.5rem;
+        padding-left: 50px;
+    }
+
+    .herSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    /* prodcut4 */
+    .mobicText {
+        font-size: 2.5rem;
+        padding-left: 105px;
+    }
+
+    .mobicSlogan {
+        font-size: .8rem;
+        padding-left: 75px;
+    }
+
+    .product4-image {
+        width: 120%;
+    }
+
+    /* prodcut5 */
+    .ridonText {
+        font-size: 2.5rem;
+        padding-left: 105px;
+    }
+
+    .ridonSlogan {
+        font-size: .8rem;
+        padding-left: 75px;
+    }
+
+    .product5-image {
+        width: 100%;
+    }
+
+    /* prodcut6 */
+    .valesText {
+        font-size: 2.5rem;
+        padding-left: 105px;
+    }
+
+    .valesSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    .product6-image {
+        width: 100%;
+    }
+
+    /* prodcut7 */
+    .avastinText {
+        font-size: 2.5rem;
+        padding-left: 86px;
+    }
+
+    .avastinSlogan {
+        font-size: .8rem;
+        padding-left: 80px;
+
+    }
+}
+
+/* =============================================end of Portrait and landscape Samsung Galaxy S4 ========================================*/
+/* =============================================portarait of ipohne s se=================================================================*/
+
+@media only screen and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 1) {
+    .typo-animation {
+        font-size: 35px;
+        margin-top: 85px;
+        text-align: center;
+    }
+
+    .footer__nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+
+
+    /* program section */
+    .hovereffect h2,
+    .common-square2 {
+        font-size: 2rem;
+    }
+
+    .first-ul {
+        font-size: 0.54rem;
+    }
+
+    /*contacts icons*/
+    .contact-description {
+        font-size: .67rem;
+    }
+
+    .restofaddress {
+        font-size: .67rem;
+        padding-left: 80px;
+        margin-top: 0;
+        transform: translateY(-50px);
+
+    }
+
+    .phoneNumber {
+        font-size: .8rem;
+
+    }
+
+    .rowContact2 {
+        transform: translateY(-65px);
+
+    }
+
+    /* story */
+    .vid2 {
+        margin-top: 20px;
+    }
+
+    /* product1 */
+    .actermaText {
+        font-size: 2.5rem;
+        padding-left: 40px;
+    }
+
+    .project__heading {
+        font-size: 1.3rem;
+    }
+
+
+    .actermaSlogan {
+        font-size: .7rem;
+        padding-left: 47px;
+
+    }
+
+    .project-image {
+        width: 320%;
+        padding-left: 400px;
+    }
+
+    /* product2 */
+    .deprexText {
+        font-size: 2.5rem;
+        padding-left: 35px;
+    }
+
+    .deprexSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    .elephentLogoImage,
+    .elephentTextImage,
+    .product2-image {
+        width: 100%;
+    }
+
+
+    /* prodcut3 */
+    .herText {
+        font-size: 2.5rem;
+        padding-left: 25px;
+    }
+
+    .herSlogan {
+        font-size: .7rem;
+        padding-left: 50px;
+    }
+
+    /* prodcut4 */
+    .mobicText {
+        font-size: 2.5rem;
+        padding-left: 75px;
+    }
+
+    .mobicSlogan {
+        font-size: .8rem;
+        padding-left: 75px;
+    }
+
+    .product4-image {
+        width: 120%;
+    }
+
+    /* prodcut5 */
+    .ridonText {
+        font-size: 2.5rem;
+        padding-left: 75px;
+    }
+
+    .ridonSlogan {
+        font-size: .8rem;
+        padding-left: 65px;
+    }
+
+    .product5-image {
+        width: 100%;
+    }
+
+    /* prodcut6 */
+    .valesText {
+        font-size: 2.5rem;
+        padding-left: 75px;
+    }
+
+    .valesSlogan {
+        font-size: .7rem;
+        padding-left: 50px;
+    }
+
+    .product6-image {
+        width: 100%;
+    }
+
+    /* prodcut7 */
+    .avastinText {
+        font-size: 2.5rem;
+        padding-left: 55px;
+    }
+
+    .avastinSlogan {
+        font-size: .8rem;
+        padding-left: 80px;
+
+    }
+
+}
+
+/* =============================================end of portarait of ipohne s se=================================================================*/
